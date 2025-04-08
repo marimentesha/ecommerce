@@ -1,66 +1,150 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ecommerce website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Home Page
+- **Category Navigation**: Browse products by category.
+- **Popular Products**: Horizontally scrollable section showcasing trending items.
+- **New Items**: Newly added products displayed in a separate slider.
+- **Sale**: Discounted products presented in an easy-to-browse format.
+- **Coupon Form**: Apply a coupon code directly from the homepage to update the cart total.
+- **About Us Preview**: A short introduction with a **Read More** link leading to the full About Us page.
 
-## About Laravel
+## About Us Page
+- **Overview**: Detailed information about the company, values, and mission.
+- **Main Image**: A large photo representing the brand.
+- **Gallery**: A collection of smaller photos at the bottom of the page.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Contacts Page
+- **Social Media**: Handles of Instagram and Twitter profiles.
+- **Contact Information**: Phone number and email address for customer support or inquiries.
+- **Instagram Photos**: Visual content from the brand’s Instagram feed.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Feedback Page
+- **Feedback Form**: Users can submit their name, email, and feedback or suggestions to help improve the website and services.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Login Page
+- **Login Form**: Email and password fields for user authentication.
 
-## Learning Laravel
+## Register Page
+- **Registration Form**: First name, last name, email, phone number, password, and repeat password fields for new user sign-up.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Account Page
+Divided into five sections:
+- **Profile Info**: Edit name, phone number, and email.
+- **Orders**: Shows all orders with status filter tabs (All, Pending, Delivered, Canceled) and "Full Order" buttons to view order details.
+- **Addresses**: Edit address, country, city, zip code, and phone number.
+- **Credit Cards**: List of saved cards (last 4 digits shown), with an option to change them.
+- **Change Password**: Form with current password, new password, and repeat new password fields.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Search Functionality
+- **Search Results**: Displays matching products with main photo, name, price, add to cart and wishlist buttons.
+- **No Results**: Shows a message and a button to go to the catalog if no products match the search term.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Catalog Page
+- **Product Listing**: All products are displayed with relevant info.
+- **Category Filter**: Dropdown to filter products by category.
+- **Sort Options**: Dropdown to sort products by ascending or descending order.
 
-## Laravel Sponsors
+## Product Page
+- **Product Details**: Main image, additional photos, name, description, quantity selector, price.
+- **Actions**: Add to cart and add to wishlist buttons.
+- **Reviews**: Scrollable section with user reviews. User's own reviews have edit and delete buttons.
+- **Review Form**: Form for leaving or editing a review.
+- **"You May Also Like"**: Scrollbar showing similar product suggestions.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Cart Page
+- **Product List**: Displays added products with quantity controls and remove options.
+- **Wishlist Option**: Ability to add products from cart to wishlist.
+- **Checkout Button**: Takes the user to the checkout process.
+- **"You May Also Like"**: Displays similar or related products.
+- **Empty State**: If no items are added, shows a message and a button to go to the catalog page.
 
-### Premium Partners
+## Multi-Step Checkout Page
+The user is guided through three steps to complete their order: Contact Information, Delivery & Payment, and Order Confirmation.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Cart Preview
+- Visible on all steps
+- Lists product names, quantities, and prices
+- Includes a link to edit the order
 
-## Contributing
+### Step 1: Contact Information
+- Input fields for:
+  - First Name
+  - Last Name
+  - Phone Number
+- Payment selection:
+  - Cash with courier
+  - Card
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Step 2: Delivery & Payment
+- Card Details (enabled if card chosen in payment selection):
+  - Card Number
+  - Expiry Year & Month
+  - Card Type
+  - CVV
+- Delivery Address:
+  - Country
+  - City
+  - Address (Line 1 & Line 2)
+  - Zip Code
 
-## Code of Conduct
+### Step 3: Order Confirmation
+- Displays a summary of:
+  - Name and contact
+  - Full delivery address
+  - Selected payment method and card preview (if applicable)
+  - Cart items and total price
+- Options to go back or confirm the order
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Wishlist Page
+- **Product Scrollbar**: Shows wishlist items with delete and add to cart buttons.
+- **"You May Also Like"**: Scrollbar of similar recommended products.
+- **Empty State**: Displays a message and a button to go to the catalog when the wishlist is empty.
 
-## Security Vulnerabilities
+# Admin Panel
+Accessible via /admin. 
+Certain sections are restricted based on user roles:
+- **Admins**: Full access to all pages.
+- **Sellers**: Limited access to only their own content in applicable sections.
+- **buyers**: no access to the admin panel.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Categories (Admins Only)
+- **List View**: Displays all categories with Edit and Delete buttons.
+- **Edit Page**: Form with fields to change category photo, name, and select a parent category.
+- **Add Page**: Form with fields to upload a photo, enter category name, and select a parent category.
 
-## License
+## Coupons (Admins Only)
+- **List View**: Displays all coupons with Edit and Delete buttons.
+- **Edit Page**: Form with fields for coupon code, discount type, discount value, and expiration date.
+- **Add Page**: Form with the same inputs as the edit page for creating a new coupon.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Orders (Admins & Sellers)
+- **List View**: 
+  - Admins see all orders with Edit and Delete buttons.
+  - Sellers see only their orders with Edit/Delete options.
+- **Edit Page**: Form to update customer name, order status, and payment status.
+- **Product Management**: Shows products in the order with a link to a page where quantity can be changed and items can be removed.
+
+## Products (Admins & Sellers)
+- **List View**:
+  - Admins see all products with Edit, Delete, and Add/Delete Images buttons.
+  - Sellers see only their own products with the same controls.
+- **Edit Page**: Form to update main photo, name, description, price, stock, and select a category.
+- **Add/Delete Images Page**: Scrollbar of additional product images with delete buttons and an add-more-photos form.
+- **Create Product**: Form with fields to add photo, name, description, price, stock, and select a category.
+
+## Reviews (Admins & Sellers)
+- **List View**:
+  - Admins see all reviews with Edit and Delete buttons.
+  - Sellers see only their own products' reviews with the same controls.
+- **Edit Page**: Form with star rating and review text fields.
+
+## Roles (Admins Only)
+- **List View**: Displays all roles with Edit and Delete buttons.
+- **Edit Page**: Form to change role name.
+- **Add Page**: Form to create a new role with a role name field.
+
+## Users (Admins & Sellers)
+- **List View**:
+  - Admins see all users with Edit and Delete buttons.
+  - Sellers see only their own user profile.
+- **Edit Page**: Form to assign or change the user’s role.
